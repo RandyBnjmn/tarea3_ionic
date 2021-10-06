@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tabla de multiplicar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-input
+      type="number"
+      id="num"
+      placeholder="Ingrese un numero"
+    ></ion-input>
+
+    <ion-button (click)="multiplicar()">Mostrar tabla</ion-button>
+  </div>
+  <div class="container" id="tabla"></div>
+</ion-content>
